@@ -1,0 +1,176 @@
+@font-face {
+    font-family: mintsans;
+    src: url(../fonts/mintsans/MintSansRegular.otf);
+  }
+
+:root {
+    --orange-dark: #EA6025;
+    --orange-light: #F2951E;
+    --blue-light: #91A29E;
+    --blue-dark: #196874;
+    --gray-one: #363533;
+  }
+
+body {
+    background: black;
+    color: var(--blue-light);
+    font-family: mintsans, sans-serif;
+    padding: 0rem 1rem 0rem 1rem
+}
+
+header{
+    padding: 3rem 0rem 3rem 0rem
+}
+
+#logo {
+width: auto;
+height: 3rem;
+margin-top: -1.55rem;
+}
+
+.logo {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+}
+
+.right {
+    display:grid;
+}
+
+.navlink {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+a:link { 
+    text-decoration: none; 
+    color:var(--blue-light);
+}
+
+
+a:visited { 
+    text-decoration: none;
+    color:var(--blue-light);
+ }
+
+
+nav,a:hover { 
+    text-decoration: none;
+    color:white;
+}
+
+
+nav,a:active { 
+    text-decoration: none;
+    color:white;
+}
+
+/* End Header: */
+
+.covervid {
+    display: flex;
+    height: auto;
+    margin: auto;
+}
+
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introtext {
+    padding-top: 3em;
+    max-width: 25em;
+}
+
+.intropic {
+    padding-top: 3em;
+
+}
+    
+
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+  }
+
+  .image-stack__item--top {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 1;
+    opacity: 100%;
+  }
+
+  .image-stack__item--bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+    z-index: 0;
+    opacity: 50%;
+  }
+
+
+.image-stack:hover,.image-stack__item--top{
+    z-index: 0;
+    opacity: 50%;
+}
+
+.image-stack:hover .image-stack__item--bottom{
+    z-index: 1;
+    opacity: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .right {
+        display: flex;
+    }
+
+    .covervid {
+        display: flex;
+        height: auto;
+        margin: auto;
+    }
+
+    .intro {
+        display: grid;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        color: var(--orange-dark);
+    }
+    
+    .introtext {
+        grid-column: 1 / span 7;
+        grid-row: 1;
+        padding-top: 50%;
+        z-index: 1;
+        opacity: 100%;
+    }
+    
+    .intropic {
+        grid-column: 4 / -1;
+        grid-row: 1;
+        z-index: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .covervid {
+        display: flex;
+        height: auto;
+        margin: auto;
+    }
+}

@@ -82,6 +82,8 @@ nav,a:active {
 .intro {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 3em;
+    color: var(--orange-dark);
 }
 
 .introtext {
@@ -93,7 +95,13 @@ nav,a:active {
     padding-top: 3em;
 
 }
+
+hr {
+    margin-bottom: 3rem;
+    border-color: var(--blue-light);
+}
     
+
 
 .image-stack {
     display: grid;
@@ -102,29 +110,66 @@ nav,a:active {
   }
 
   .image-stack__item--top {
-    grid-column: 1 / span 8;
+    grid-column: 1 / 9;
     grid-row: 1;
-    padding-top: 20%;
     z-index: 1;
-    opacity: 100%;
+    opacity: 1;
   }
 
   .image-stack__item--bottom {
-    grid-column: 4 / -1;
+    grid-column: 3 / 11;
     grid-row: 1;
+    padding-top: 20%;
     z-index: 0;
-    opacity: 50%;
+    opacity: .5;
   }
 
+      /* Hover */
+  .image-stack:hover .image-stack__item--top{
+      z-index: 0;
+      opacity: .5;
+  }
 
-.image-stack:hover,.image-stack__item--top{
-    z-index: 0;
-    opacity: 50%;
+  .image-stack:hover .image-stack__item--bottom{
+    z-index: 1;
+    opacity: 1;
 }
 
-.image-stack:hover .image-stack__item--bottom{
+
+
+
+
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  .image-stack__item--topv2 {
+    grid-column: 3 / 11;
+    grid-row: 1;
+    z-index: 0;
+    opacity: .5;
+  }
+
+  .image-stack__item--bottomv2 {
+    grid-column: 5 / 13;
+    grid-row: 1;
+    padding-top: 20%;
     z-index: 1;
-    opacity: 100%;
+    opacity: 1;
+  }
+
+      /* Hover */
+  .image-stack:hover .image-stack__item--topv2{
+      z-index: 1;
+      opacity: 1;
+  }
+
+  .image-stack:hover .image-stack__item--bottomv2{
+    z-index: 0;
+    opacity: .5;
 }
 
 
@@ -148,13 +193,12 @@ nav,a:active {
         padding-bottom: 3em;
         grid-template-columns: repeat(12, 1fr);
         position: relative;
-        color: var(--orange-dark);
     }
     
     .introtext {
         grid-column: 1 / span 7;
         grid-row: 1;
-        padding-top: 50%;
+        padding-top: 40%;
         z-index: 1;
         opacity: 100%;
     }
@@ -172,5 +216,19 @@ nav,a:active {
         display: flex;
         height: auto;
         margin: auto;
+    }
+
+    .introtext {
+        grid-column: 3 / span 8;
+        grid-row: 1;
+        padding-top: 30%;
+        z-index: 1;
+        opacity: 100%;
+    }
+    
+    .intropic {
+        grid-column: 5 / -2;
+        grid-row: 1;
+        z-index: 0;
     }
 }

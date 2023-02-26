@@ -172,7 +172,10 @@ hr {
     opacity: 1;
 }
 
-
+.projsandwhich{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -208,6 +211,13 @@ hr {
         grid-row: 1;
         z-index: 0;
     }
+
+    .image-stack {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        width: 47.8vw;
+      }
 }
 
 @media only screen and (min-width: 768px) {

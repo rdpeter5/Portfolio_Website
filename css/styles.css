@@ -114,6 +114,7 @@ hr {
     grid-row: 1;
     z-index: 0;
     opacity: .5;
+    transition: all .2s ease;
   }
 
   .image-stack__item--bottom {
@@ -122,6 +123,7 @@ hr {
     padding-top: 20%;
     z-index: 1;
     opacity: 1;
+    transition: all .2s ease;
   }
 
       /* Hover */
@@ -151,6 +153,7 @@ hr {
     grid-row: 1;
     z-index: 1;
     opacity: 1;
+    transition: all .2s ease;
   }
 
   .image-stack__item--bottomv2 {
@@ -159,6 +162,7 @@ hr {
     padding-top: 20%;
     z-index: 0;
     opacity: .5;
+    transition: all .2s ease;
   }
 
       /* Hover */

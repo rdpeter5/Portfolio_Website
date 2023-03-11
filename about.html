@@ -60,45 +60,66 @@
         <h3>Contact Me</h3>
         <hr>
 
-       <div class="container">
-        <form action="mailto:ryan@rpetersondesign.com" method="post" enctype="text/plain">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">First Name</label>
+        <div class="container">
+          <form action="mailto:ryan@rpetersondesign.com" method="post" enctype="text/plain">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
           </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
           </div>
+    
+          <div class="row">
+            <div class="col-25">
+              <label for="message">Message</label>
+            </div>
+            <div class="col-75">
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+          </form>
         </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lname">Last Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-25">
-            <label for="message">Message</label>
-          </div>
-          <div class="col-75">
-            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <input type="submit" value="Submit">
-        </div>
-        </form>
-      </div>
       
 
 
         </div>
 
-
+        <footer class="footer">
+          <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.tiktok.com/@rpetersondesign">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/ryan-peterson-774947185/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/rpetersondesign/">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+          </ul>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="index.html">home</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">about</a></li>
+      
+          </ul>
+          <p>&copy;2023 Ryan Peterson | All Rights Reserved</p>
+        </footer>
+      
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         
 
     </body>

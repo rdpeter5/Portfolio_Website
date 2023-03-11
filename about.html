@@ -25,30 +25,83 @@
 
     <body>
 
-      <header>
-        <div>
-            <a href="index.html" title="Home" ><img class="logo" src="/imgs/rlogoname-01.png"></a>
+        <header>
+            <nav>
+                <div>
+                    <a href="index.html" title="Home" >
+                        <div class="logo">
+                            <img id="logo" src="/imgs/Rpetersondesignwhite-01.png">
+                            <p class="navlink">rpetersondesign</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="right">
+                    <a class="navlink" href="index.html" title="Home" >home</a>
+                    <a class="navlink" href="about.html" title="About" class="current-page"><u>about</u></a>
+                </div>
+            </nav>
+          </header>
+
+          <h3>About Me</h3>
+          <hr>
+        <div class="intro">
+            <div class="bodytext">
+                <p>Hi, I'm Ryan Peterson, a seasoned graphic designer with experience in branding, web design, and print materials. With a degree in graphic design, I create designs that are both beautiful and functional, tailored to my clients' needs. I'm proficient in Adobe Creative Suite, typography, and effective branding principles.</p>
+                <br>
+                <p>As a designer, I believe in the power of visual communication, which is why I have a strong interest in American Sign Language (ASL). It allows me to connect with a wider audience and expand my understanding of how to effectively communicate through design.</p>
+                <br>
+                <p>If you're looking for a collaborative partner on your next design project, take a look at my portfolio to see some of my past work and reach out to discuss your project goals.</p>
+            </div>
+            <div class="bodypic">
+                <img src="/imgs/DSC05850.jpg" alt="picture of Ryan Peterson">
+            </div>
         </div>
-        <nav>
-            <a href="index.html" title="Home" class="current-page">Home</a>
-            <a href="about.html" title="About">About</a></li>
-        </nav>
-      </header>
+
+        <h3>Contact Me</h3>
+        <hr>
+
+       <div class="container">
+        <form action="mailto:ryan@rpetersondesign.com" method="post" enctype="text/plain">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-25">
+            <label for="message">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+      </div>
+      
 
 
-      <a href="about.html">
-        <div class="image-stack">
-            <div class="image-stack__item image-stack__item--topv2">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/portrait-1-cropped.jpg" alt="A portrait of a girl under hanging flowers.">
-            </div>
-            <div class="image-stack__item image-stack__item--bottomv2">
-              <img src=" https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/texture-waves2.jpeg" alt="">
-            </div>
-         </div>
-    </a>
+        </div>
 
+
+        
 
     </body>
 
-
+   
 </html>

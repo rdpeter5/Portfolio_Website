@@ -360,6 +360,11 @@ hr {
   margin-bottom: 3em;
 }
 
+.gallery video{
+  margin: auto;
+  margin-bottom: 3em;
+}
+
 .gallery .row{
   display:flex;
 }

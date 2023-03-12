@@ -266,11 +266,223 @@ hr {
     clear: both;
   }
   
+
+
+
+
+
+
+  /* Project Pages Styles */
+.projectcoverimg {
+  margin-bottom: 3em;
+  width: 100vw;
+}
+
+.projinfo {
+  display: grid;
+  padding-bottom: 3em;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.projinfo h6{
+  letter-spacing: .5px;
+}
+
+#projectname {
+  grid-row: 1;
+  grid-column: 1;
+  color: var(--blue-dark);
+}
+
+#projectoverview {
+  grid-row: 1;
+  grid-column: 6 / 13;
+  color: var(--blue-dark);
+}
+
+#projecttitle {
+  grid-row: 2;
+  grid-column: 1 / 5;
+  color: var(--blue-light);
+}
+
+#projectinfo {
+  grid-row: 2;
+  grid-column: 6 / 13;
+  color: var(--blue-light);
+  margin-bottom: 3rem;
+}
+
+#industry {
+  grid-row: 4;
+  grid-column: 1 / span 3;
+  color: var(--blue-dark);
+}
+
+#dates {
+  grid-row: 4;
+  grid-column: 4;
+  color: var(--blue-dark);
+}
+
+#involvement {
+  grid-row: 4;
+  grid-column: 6 / span 2;
+  color: var(--blue-dark);
+}
+
+#indis {
+  grid-row: 5;
+  grid-column: 1 / span 2;
+  color: var(--blue-light);
+}
+
+#dateis {
+  grid-row: 5;
+  grid-column: 4 / span 2;
+  color: var(--blue-light);
+}
+
+#involved {
+  grid-row: 5;
+  grid-column: 6 / 13;
+  color: var(--blue-light);
+}
+
+
+.gallery{
+  margin-bottom: 3em;
+}
+
+.gallery img{
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+.gallery .row{
+  display:flex;
+}
+
+.gallery .column{
+  flex: 50%;
+  margin: 3rem;
+}
+
+
+.footnav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.flexleft{
+  grid-row: 1;
+  grid-column: 1;
+  justify-content: left;
+  color: #91A29E;
+  text-decoration: none;
+}
+
+.flexright{
+  grid-row: 1;
+  grid-column: 5;
+  justify-content: right;
+  color: #91A29E;
+  text-decoration: none;
+}
+
+.flexleft:hover{
+  translate: 10px;
+  transition: 0.5s;
+  color: #fff;
+}
+.flexright:hover{
+  translate: -10px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+
+
+  /* End Project Pages Styles */
+
+
+
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
       margin-top: 0;
+    }
+
+    .projinfo {
+      display: grid;
+      padding-bottom: 3em;
+      grid-template-columns: repeat(12, 1fr);
+      position: relative;
+    }
+    
+    #projectname {
+      grid-row: 1;
+      grid-column: 1/12;
+      color: var(--blue-dark);
+    }
+    
+    #projectoverview {
+      grid-row: 3;
+      grid-column: 1/12;
+      color: var(--blue-dark);
+    }
+    
+    #projecttitle {
+      grid-row: 2;
+      grid-column: 1/12;
+      margin-bottom: 1em;
+      color: var(--blue-light);
+    }
+    
+    #projectinfo {
+      grid-row: 4;
+      grid-column: 1/13;
+      margin-bottom: 1em;
+      color: var(--blue-light);
+    }
+    
+    #industry {
+      grid-row: 5;
+      grid-column: 1 / 7;
+      color: var(--blue-dark);
+    }
+    
+    #dates {
+      grid-row: 5;
+      grid-column: 8 / 12;
+      color: var(--blue-dark);
+    }
+    
+    #involvement {
+      grid-row: 7;
+      grid-column: 1 / 12;
+      color: var(--blue-dark);
+      margin-top: 1em;
+    }
+    
+    #indis {
+      grid-row: 6;
+      grid-column: 1 / 6;
+      color: var(--blue-light);
+    }
+    
+    #dateis {
+      grid-row: 6;
+      grid-column: 8 / 12;
+      color: var(--blue-light);
+    }
+    
+    #involved {
+      grid-row: 8;
+      grid-column: 1 / 13;
+      color: var(--blue-light);
     }
   }
 

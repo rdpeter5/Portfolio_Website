@@ -15,7 +15,8 @@ body {
     background: black;
     color: var(--blue-light);
     font-family: mintsans, sans-serif;
-    padding: 0rem 1rem 0rem 1rem
+    padding: 0rem 1rem 0rem 1rem;
+    letter-spacing: 1pt;
 }
 
 header{

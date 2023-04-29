@@ -10,7 +10,7 @@
         <meta charset="UTF-8">
 
 
-         <title>rdpetersondesign - about</title>
+         <title>rdpetersondesign - contact</title>
 
          <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
 
@@ -37,34 +37,48 @@
                 </div>
                 <div class="right">
                     <a class="navlink" href="index.html" title="Home" >home</a>
-                    <a class="navlink" href="about.html" title="About" class="current-page"><u>about</u></a>
-                    <a class="navlink" href="contact.html" title="Contact">contact</a>
+                    <a class="navlink" href="about.html" title="About">about</a>
+                    <a class="navlink" href="contact.html" title="Contact" class="current-page"><u>contact</u></a>
                 </div>
             </nav>
           </header>
 
-          <h3>About Me</h3>
-          <hr>
-        <div class="intro">
-            <div class="bodytext">
-                <p>Hi, I'm Ryan Peterson, a seasoned graphic designer with experience in branding, web design, and print materials. With a degree in graphic design, I create designs that are both beautiful and functional, tailored to my clients' needs. I'm proficient in Adobe Creative Suite, typography, and effective branding principles.</p>
-                <br>
-                <p>As a designer, I believe in the power of visual communication, which is why I have a strong interest in American Sign Language (ASL). It allows me to connect with a wider audience and expand my understanding of how to effectively communicate through design.</p>
-                <br>
-                <p>If you're looking for a collaborative partner on your next design project, take a look at my portfolio to see some of my past work and reach out to discuss your project goals.</p>
-            </div>
-            <div class="bodypic">
-                <img src="/imgs/DSC05850.jpg" alt="picture of Ryan Peterson">
-            </div>
-        </div>
-
-        <h3>Resume</h3>
+          <h3>Contact Me</h3>
         <hr>
 
-
-          
-          <iframe id="mypdf" src="/imgs/resume.pdf" frameborder="0"></iframe>
-
+        <div class="container">
+          <form action="mailto:ryan@rpetersondesign.com" method="post" enctype="text/plain">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-25">
+              <label for="message">Message</label>
+            </div>
+            <div class="col-75">
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+          </form>
+        </div>
       
 
 

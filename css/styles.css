@@ -176,6 +176,9 @@ height: auto;
 
 iframe {
   justify-content: center;
+  margin-bottom: 5rem;
+  width: 80vw; 
+  height: 50vw;
 }
 
 .image-stack {

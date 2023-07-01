@@ -164,7 +164,10 @@ hr {
   margin-right: auto;
 }
 
-
+#argif{
+  width: 40vw;
+  margin-top:10vw;
+}
 
 .image-stack {
     display: grid;

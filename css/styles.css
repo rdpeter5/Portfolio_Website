@@ -174,11 +174,12 @@ width: 50vw;
 height: auto;
 }
 
+
 iframe {
-  justify-content: center;
   margin-bottom: 5rem;
-  width: 80vw; 
-  height: 50vw;
+  width: 98vw; 
+  height: 60vw;
+  
 }
 
 .image-stack {
@@ -222,7 +223,9 @@ iframe {
 }
 
 
-
+#highwayvid {
+  max-height: 90vh;
+}
 
 .bodytext {
     padding-top: 3em;

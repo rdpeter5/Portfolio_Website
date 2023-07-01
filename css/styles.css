@@ -164,9 +164,14 @@ hr {
   margin-right: auto;
 }
 
-#argif{
+#argif {
   width: 40vw;
   margin-top:10vw;
+}
+
+#muybridge {
+width: 50vw;
+height: auto;
 }
 
 .image-stack {
